@@ -1,23 +1,23 @@
-#Ä¿µÄ£º½«ÎÄ¼þ¼ÐÖÐµÄ±êÇ©Í¼Ïñ·Åµ½Ò»Æð
-#Ë¼Â·£º±éÀúÎÄ¼Ñ¼ÒÖÐµÄËùÓÐlabel.png£¬½«Æä¸´ÖÆ·Åµ½ÁíÒ»¸öÎÄ¼þ¼Ð²¢ÖØÐÂÃüÃû
+#Ä¿ï¿½Ä£ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ÐµÄ±ï¿½Ç©Í¼ï¿½ï¿½Åµï¿½Ò»ï¿½ï¿½
+#Ë¼Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼Ñ¼ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½label.pngï¿½ï¿½ï¿½ï¿½ï¿½ä¸´ï¿½Æ·Åµï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ð²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 #
 
 
 import os
 import shutil
 
-dir_path="C:/Users/chenkj/Desktop/G1"           #Ô­ÎÄ¼þ¼ÐÂ·¾¶
-newPath="C:/Users/chenkj/Desktop/G1/00"         #ÐÂÎÄ¼þ¼ÐÂ·¾¶
+dir_path="C:/Users/chenkj/Desktop/G3_1"           #Ô­ï¿½Ä¼ï¿½ï¿½ï¿½Â·ï¿½ï¿½
+newPath="C:/Users/chenkj/Desktop/G3_1/00"         #ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Â·ï¿½ï¿½
 
 fileNames=os.listdir(dir_path)
 img_list=[]
 
-for file in fileNames:              #±éÀúÎÄ¼þ¼Ð
-    img_folder=dir_path+'/'+file    #ÎÄ¼þ¼ÐÖÐµÄÎÄ¼þÃû
+for file in fileNames:              #ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½
+    img_folder=dir_path+'/'+file    #ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½Ä¼ï¿½ï¿½ï¿½
     print(img_folder)
 
-    if os.path.exists(img_folder):                  #ÅÐ¶ÏÊÇ·ñ´æÔÚ¸ÃÎÄ¼þ
-        for image_name in os.listdir(img_folder):   #±éÀú×ÓÎÄ¼þ¼Ð
+    if os.path.exists(img_folder):                  #ï¿½Ð¶ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Ú¸ï¿½ï¿½Ä¼ï¿½
+        for image_name in os.listdir(img_folder):   #ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½
             #print(image_name)
             if(image_name=='label.png'):
                 originPath=img_folder+'/'+image_name
@@ -29,6 +29,5 @@ print('ok')
 
 
 
-
-
+ 
 
