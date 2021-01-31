@@ -22,6 +22,9 @@ class ImageRename():
                 i = i + 1
         print ('total %d to rename & converted %d pngs' % (total_num, i))
  
+
+
+
 if __name__ == '__main__':
     newname = ImageRename()
     newname.rename()
