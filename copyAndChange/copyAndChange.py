@@ -15,12 +15,12 @@ def main():
     random.seed(0)
 
     # 将数据集中10%的数据划分到验证集中
-    split_rate = 0.5
+    split_rate = 0.2
 
     # 指向你解压后的flower_photos文件夹
     cwd = os.getcwd()
-    data_root = os.path.join(cwd, "C:\\Users\\chenkj\\Desktop\\EYEDATA\\7ShapeContext")
-    origin_flower_path = os.path.join(data_root, "0306")
+    data_root = os.path.join(cwd, "F:\\chenkj\\data")
+    origin_flower_path = os.path.join(data_root, "classification")
     assert os.path.exists(origin_flower_path)
     flower_class = [cla for cla in os.listdir(origin_flower_path)
                     if os.path.isdir(os.path.join(origin_flower_path, cla))]
